@@ -1,6 +1,6 @@
 {
   "name": "react-static-webpack-plugin",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Build full static sites using React, React Router and Webpack",
   "license": "MIT",
   "repository": "iansinnott/react-static-webpack-plugin",
@@ -36,13 +36,13 @@
     "async": "^1.5.1",
     "debug": "^2.2.0",
     "eval": "^0.1.1",
-    "lodash": "^3.10.1",
+    "lodash": "^4.0.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.9.1",
+    "ava": "^0.9.0",
     "babel": "^6.3.26",
     "babel-cli": "^6.3.17",
     "babel-eslint": "^4.1.6",
