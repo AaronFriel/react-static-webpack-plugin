@@ -84,7 +84,7 @@ StaticSitePlugin.prototype.apply = function(compiler) {
           }
 
           const route = renderProps.routes[renderProps.routes.length - 1]; // See NOTE
-          const body = ReactDOM.renderToString(<Router render={props => <RouterContext {...props}/>}/>);
+          const body = ReactDOM.renderToString(<RouterContext {...renderProps}/>);
           const { stylesheet, favicon, bundle } = this.options;
           const assetKey = getAssetKey(location);
           const doc = this.render({
