@@ -14,7 +14,7 @@
     "node": ">=4.2.0"
   },
   "scripts": {
-    "test": "eslint src && npm run build && ava",
+    "test": "eslint src && npm run build && ava --verbose",
     "watch": "babel -w -d dist src",
     "clean": "rimraf dist",
     "build": "npm run clean && babel -d dist src",
@@ -24,6 +24,9 @@
     "preversion": "npm test",
     "postversion": "git push && git push --tags",
     "prepublish": "npm run build"
+  },
+  "ava": {
+    "babel": "inherit"
   },
   "keywords": [
     "react",
